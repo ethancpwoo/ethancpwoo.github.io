@@ -27,7 +27,7 @@
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#project">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
@@ -37,21 +37,41 @@
     <section id="intro" class="intro_section centered-container">
         <div class="item">
             <h1 class="hero-title">Ethan Woo</h1>
-            <p class="hero-text">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+            <p class="hero-text">I'm currently a mechatronics engineering undergrad @ The University of Waterloo.</p>
+            <p class="hero-text"></p>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about_section centered-container">
         <h2>About Me:</h2>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in classical Latin literature...</p>
+        <p>Hi! My name is Ethan and I am currently studying my undergrad in mechatronics engineering at the University of Waterloo. 
+            I've been interested in robotics and autonomy for a while, and I have worked on multiple robotic personal projects. 
+            From my exposure in autonomy, I realized that I like to see my code work on a physical level, leading me to work more towards 
+            embedded systems and controls. I really would like to gain more experience in working with lower level code and understand 
+            the depths of this field. 
+        </p>
+        <br>
+        <p>
+            As for now, I've been trying to work more at my undergraduate research position at the Control, Learning and Logic Group, where 
+            the group is trying to setup an autonomous vehicle stack on a Jeep Cherokee. I've also been working more on Watonomous and 
+            UWARG, where I am working on their HAL and embedded flight systems.  
+        </p>
+        <br>
+        <p>
+            On a personal note, I've played baseball for most my childhood but haven't touched it since an elbow injury. I also played badminton from 
+            high school onwards and trained until university. Nowadays, I do play badminton recreationally, but I am looking to rejoin some softball or
+            maybe some other sports. 
+        </p>
         <a class="main_bt" href="#">Read More</a>
     </section>
 
     <!-- Resume Section with PDF Canvas -->
     <section id="resume" class="resume_section centered-container">
         <h2>Resume</h2>
-        <p>View and interact with my full resume below.</p>
+        <p>View and interact with my full resume below.
+            <br></br>
+        </p>
         <embed
             src="resume/EthanWooResume.pdf#toolbar=0&navpanes=0&scrollbar=0"
             type="application/pdf"
@@ -66,12 +86,30 @@
     </section>
 
     <!-- Projects Section with Owl Carousel for Multiple Project Images -->
-    <section id="projects" class="project_section centered-container">
+    <section id="project" class="project_section centered-container">
         <h2>Projects</h2>
-        <div class="owl-carousel carousel-slider-post">
-            <div class="item"><img src="images/project1.jpg" alt="Project 1"></div>
-            <div class="item"><img src="images/project2.jpg" alt="Project 2"></div>
-            <div class="item"><img src="images/project3.jpg" alt="Project 3"></div>
+        <div id="container" class="invisible-rectangle fly-in">
+            <span id="text">
+                <h3>Quadrupedal Simulation</h3>
+                <p>
+                    I built this quadruped with my roommate. He worked primarily on the mechanical robot, I worked more on the autonomy.
+                    I used RL and PyTorch to train the quadruped on how to walk. I created a simulation of the robot using PyBullet and
+                    did the sim-to-real transfer using ROS2.
+                </p>
+            </span>
+            <img id="image" src="images/robot_irl.jpg" alt="Image" />
+        </div>
+        <br></br>
+        <div id="container" class="invisible-rectangle fly-in">
+            <img id="image" src="images/slampic1.png" alt="Image"/>
+            <span id="text">
+                <h3>SLAM Spacemapper Robot</h3>
+                <p>
+                    I used OpenCV and C++ to program a robot running an Monocular ORB-SLAM algorithm. Algorithm ran on a Raspberry Pi 3, using an Arducam. 
+                    The robot was designed with OnShape and with a L298N motor controller driving the motors. ORB-SLAM created a map of the 
+                    area the robot covered.
+                </p>
+            </span>
         </div>
     </section>
 
@@ -89,7 +127,7 @@
 
     <!-- Footer -->
     <footer class="centered-container">
-        <p>&copy; 2024 Ethan Woo. All rights reserved.</p>
+        <p>Ethan Woo</p>
     </footer>
 
     <!-- JavaScript and Plugin Scripts -->
@@ -99,6 +137,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/smooth_scroll.js"></script>
+    <script src="js/animations.js"></script>
     <script>
         $(document).ready(function () {
             // Activate Owl Carousel for Project Slider

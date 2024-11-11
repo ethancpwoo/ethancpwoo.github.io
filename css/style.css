@@ -25,6 +25,29 @@ body {
     text-align: center;
 }
 
+.invisible-rectangle {
+    display: flex;                  /* Use flexbox for side-by-side layout */
+    align-items: center;            /* Vertically center content */
+    justify-content: space-between; /* Space out content evenly */
+    width: 80%;                     /* Container width */
+    height: auto;                   /* Container height */
+    background-color: #696969;  /* Invisible background */
+    padding: 20px;                  /* Padding around content */
+    box-sizing: border-box;         /* Include padding in width/height */
+}
+
+.invisible-rectangle img {
+    max-width: 50%;                    /* Adjust image width to 45% of container */
+    height: auto;                  /* Maintain aspect ratio */
+}
+
+.invisible-rectangle #text {
+    width: 45%;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+}
+
 /* Loader */
 .loader_bg {
     position: fixed;
@@ -73,7 +96,6 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
-    text-decoration: none;
 }
 
 header nav ul li a:hover {
@@ -114,7 +136,7 @@ header nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #1b1b1b;
     min-height: 100vh;
     padding: 80px 20px;
 }
@@ -135,7 +157,7 @@ header nav ul li a:hover {
 
 .hero-text {
     font-size: 20px;
-    max-width: 600px;
+    /* max-width: 80%; */
     margin: 0 auto;
 }
 
@@ -159,21 +181,36 @@ header nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* Dark Background Section */
-.dark-bg {
-    background-color: #1b1b1b;
-    color: #fff;
-}
-
-.dark-bg h2 {
-    color: #fff;
-}
-
 /* Resume Section */
-#resume canvas {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
+#resume {
+    background: #333;
+    color: #fff;
+}
+#resume h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Project Section */
+
+#project {
+    background: #fff;
+    color: #333;
+}
+
+#project h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#project h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#project p {
+    max-width: 700px;
+    line-height: 1.6;
 }
 
 .main_bt {
@@ -185,11 +222,24 @@ header nav ul li a:hover {
     cursor: pointer;
     margin-top: 20px;
     transition: background 0.3s ease;
+    text-decoration: none;
 }
 
 .main_bt:hover {
     background: #333;
 }
+
+.fly-in {
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.fly-in.visible {
+    transform: translateX(0); /* Fly into view */
+    opacity: 1;
+}
+
 
 /* Contact Section */
 #contact form {
