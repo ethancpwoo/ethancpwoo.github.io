@@ -139,6 +139,27 @@
     <script src="js/smooth_scroll.js"></script>
     <script src="js/animations.js"></script>
     <script>
+        $(document).ready(function() {
+            $('#contact-form').on('submit', function(e) {
+                e.preventDefault();
+                
+                var formData = $(this).serialize();
+                
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://your-emailjs-service-or-server-url', // Replace with EmailJS or server endpoint
+                    data: formData,
+                    success: function(response) {
+                        $('.form-message').text('Thank you for reaching out! Your message has been sent.').css('color', 'green');
+                    },
+                    error: function() {
+                        $('.form-message').text('Oops! Something went wrong. Please try again later.').css('color', 'red');
+                    }
+                });
+            });
+        });
+        </script>
+    <script>
         $(document).ready(function () {
             // Activate Owl Carousel for Project Slider
             $(".carousel-slider-post").owlCarousel({
