@@ -64,6 +64,11 @@ body {
     width: 80px;
 }
 
+a {
+    color: inherit; /* Inherits the color from the parent */
+    text-decoration: none; /* Optional: removes the underline */
+  }
+
 /* Header styling */
 header {
 
@@ -80,6 +85,7 @@ header {
     height: 80px; 
 
 }
+
 
 header nav ul {
     list-style: none;
