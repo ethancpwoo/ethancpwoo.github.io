@@ -122,12 +122,12 @@ header nav ul li a:hover {
     min-height: 100vh;
     padding: 80px 20px;
 }
-.resume_section {
-    background: #1b1b1b;
+.experience_section {
+    background: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #1b1b1b;
     min-height: 100vh;
     padding: 80px 20px;
 }
@@ -190,6 +190,27 @@ header nav ul li a:hover {
     font-size: 36px;
     margin-bottom: 20px;
 }
+
+#experience {
+    background: #fff;
+    color: #333;
+}
+
+#experience h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#experience h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#experience p {
+    max-width: 700px;
+    line-height: 1.6;
+}
+
 
 /* Project Section */
 
@@ -264,6 +285,21 @@ header nav ul li a:hover {
     cursor: pointer;
     font-size: 18px;
 }
+
+.social-icon {
+    font-size: 2rem;
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .social-icon.linkedin:hover {
+    color: #0077b5;
+  }
+
+  .social-icon.github:hover {
+    color: #ffffff;
+  }
 
 /* Footer */
 footer {

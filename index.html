@@ -26,9 +26,8 @@
             <ul>
                 <li><a href="#intro">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#experience">Experiences</a></li>
                 <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -45,49 +44,96 @@
     <!-- About Section -->
     <section id="about" class="about_section centered-container">
         <h2>About Me:</h2>
-        <p>Hi! My name is Ethan and I am currently studying my undergrad in mechatronics engineering at the University of Waterloo. 
-            I've been interested in robotics and autonomy for a while, and I have worked on multiple robotic personal projects. 
-            From my exposure in autonomy, I realized that I like to see my code work on a physical level, leading me to work more towards 
-            embedded systems and controls. I really would like to gain more experience in working with lower level code and understand 
-            the depths of this field. 
+        <p>Hi! My name is Ethan and I am going into my 4a term studying my undergrad in mechatronics engineering at the University of Waterloo.  
         </p>
         <br>
         <p>
-            As for now, I've been trying to work more at my undergraduate research position at the Control, Learning and Logic Group, where 
-            the group is trying to setup an autonomous vehicle stack on a Jeep Cherokee. I've also been working more on Watonomous and 
-            UWARG, where I am working on their HAL and embedded flight systems.  
+            Currently, I am in Singapore doing exchange at Nanyang Technical University.
         </p>
         <br>
         <p>
-            On a personal note, I've played baseball for most my childhood but haven't touched it since an elbow injury. I also played badminton from 
-            high school onwards and trained until university. Nowadays, I do play badminton recreationally, but I am looking to rejoin some softball or
-            maybe some other sports. 
+            I like to play baseball and badminton. 
         </p>
-        <a class="main_bt" href="#">Read More</a>
+        <br>
+        <p>
+            I also really like autonomous stuff and robotics.
+        </p>
+
+        <br>
+        <br>
+        <p>
+            I do not have much artistic taste, as you can see by my portfolio.
+        </p>
+        <!-- <a class="main_bt" href="#">Read More</a> -->
     </section>
 
-    <!-- Resume Section with PDF Canvas -->
-    <section id="resume" class="resume_section centered-container">
-        <h2>Resume</h2>
-        <p>View and interact with my full resume below.
-            <br></br>
-        </p>
-        <embed
-            src="resume/EthanWooResume.pdf#toolbar=0&navpanes=0&scrollbar=0"
-            type="application/pdf"
-            frameBorder="0"
-            scrolling="auto"
-            height="1100px"
-            width="900px"
-        /></embed>
+    <section id="experience" class="experience_section centered-container">
+        <h2>Experiences</h2>
+        <div id="container" class="invisible-rectangle fly-in">
+            <span id="text">
+                <h3>ArenaX Labs</h3>
+                <p>
+                    ArenaX Labs is a startup with goals of a RL competition platform. Created and evaluated robotic environments for the competition.
+                    Developed modular RL training pipeline in PyTorch. Researched SOTA RL models applied to internal robotic applications. 
+                    First time working with robotics professionally, amazing experience. Here is a picture of robotic training in IsaacLab.
+                </p>
+
+            </span>
+            <img id="image" src="images/arenademopic.png" alt="Image" />
+        </div>
         <br></br>
-        <p><strong>Download my full resume in PDF format below.</strong></p>
-        <a href="resume/EthanWooResume.pdf" class="main_bt" download="Ethan_Woo_Resume">Download PDF</a>
+        <div id="container" class="invisible-rectangle fly-in">
+            <img id="image" src="images/jeep.jpg" alt="Image"/>
+            <span id="text">
+                <h3>Autonomous Vehicle Control, Learning and Logic Group</h3>
+                <p>
+                    Worked with Autoware and ROS2 to interface with this Jeep Cherokee to make it self driving. I also worked with an 
+                    Indro drone and interfaced sensor and tested with it. Ran some autonomy, perception and localization algorithms. 
+                    Cool to see SLAM working in real life.
+                </p>
+            </span>
+        </div>
+        <br></br>
+        <div id="container" class="invisible-rectangle fly-in">
+            <span id="text">
+                <h3>Advanced Electrophoresis Solutions</h3>
+                <p>
+                    Learned a lot about embedded systems. Worked primarly on their custom STM32 based-chip and installed a custom OS on it.
+                    Worked on interfacing with different sensors and drivers written in C and C++.
+                    Medical devices are complicated, most the pictures from the internship are NDA'd, so here is a picture of the devices.
+                </p>
+            </span>
+            <img id="image" src="images/aesdemopic.png" alt="Image"/>
+        </div>
+        <br></br>
+        <div id="container" class="invisible-rectangle fly-in">
+            <img id="image" src="images/epsondemo.jpg" alt="Image"/>
+            <span id="text">
+                <h3>Epson Canada</h3>
+                <p>
+                    My first internship. I was in Epson's applied research branch and worked on a golf launch monitor.
+                    Developed algorithms to capture golf ball movements and calculate their spin and velocity. First exposure
+                    to machine vision with OpenCV and C++. Built this prototype. 
+                </p>
+            </span>
+        </div>
     </section>
+
 
     <!-- Projects Section with Owl Carousel for Multiple Project Images -->
     <section id="project" class="project_section centered-container">
         <h2>Projects</h2>
+        <div id="container" class="invisible-rectangle fly-in">
+            <img id="image" src="images/openvla_model.jpg" alt="Image"/>
+            <span id="text">
+                <h3>Zero-Shot VLA Manipulator Simulation Interface</h3>
+                <p>
+                    Integrated MuJoCo simulation pipeline to a state of the art Vision-Language-Action model (OpenVLA).
+                    First time working with a large model, and requires heavy computation. Used GCP VM to run.
+                </p>
+            </span>
+        </div>
+        <br></br>
         <div id="container" class="invisible-rectangle fly-in">
             <span id="text">
                 <h3>Quadrupedal Simulation</h3>
@@ -113,21 +159,9 @@
         </div>
     </section>
 
-    <!-- Contact Section with Tooltip for Validation Messages -->
-    <section id="contact" class="contact_section centered-container">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" name="firstname" placeholder="Your Name" required data-toggle="tooltip" title="Enter your name">
-            <input type="email" name="email" placeholder="Email" required data-toggle="tooltip" title="Enter a valid email">
-            <input type="text" name="phone" placeholder="Phone" required data-toggle="tooltip" title="Enter your phone number">
-            <textarea name="message" placeholder="Message" required data-toggle="tooltip" title="Enter your message"></textarea>
-            <button class="main_bt">Send</button>
-        </form>
-    </section>
-
     <!-- Footer -->
     <footer class="centered-container">
-        <p>Ethan Woo</p>
+        <p>Ethan Woo, ecpwoo@uwaterloo.ca</p>
     </footer>
 
     <!-- JavaScript and Plugin Scripts -->
