@@ -31,7 +31,7 @@ body {
     justify-content: space-between; /* Space out content evenly */
     width: 80%;                     /* Container width */
     height: auto;                   /* Container height */
-    background-color: #696969;  /* Invisible background */
+    background-color: #424242;  /* Invisible background */
     padding: 20px;                  /* Padding around content */
     box-sizing: border-box;         /* Include padding in width/height */
 }
@@ -44,7 +44,7 @@ body {
 .invisible-rectangle #text {
     width: 45%;
     font-size: 16px;
-    color: black;
+    color: white;
     text-align: left;
 }
 
