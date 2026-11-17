@@ -130,7 +130,7 @@ const portfolioEntries = [
     {
         "title": "Quadrupedal Simulation",
         "lead": "Teaching a quadruped to walk.",
-        "body": "Built with my (friend)[https://www.linkedin.com/in/yang--lu/]: he handled the mechanics, I handled autonomy. Trained a walking policy in PyBullet with RL (DDPG) \n\n Transferred to the robot with Arduino commands and ROS2.",
+        "body": "Built with my [friend](https://www.linkedin.com/in/yang--lu/): he handled the mechanics, I handled autonomy. Trained a walking policy in PyBullet with RL (DDPG) \n\n Transferred to the robot with Arduino commands and ROS2.",
         "image": "images/quadruped/robot_irl.jpg",
         "alt": "Quadruped robot",
         "code": "https://github.com/ethancpwoo/quadrupedal-sim",
