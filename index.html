@@ -1,241 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Basic setup -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ethan Woo Portfolio</title>
-    <link rel="icon" href="images/fevicon.png" type="image/gif">
-    
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <meta name="description" content="Ethan Woo — mechatronics engineering, robotics, and things I’ve built.">
+    <title>Ethan Woo</title>
+    <link rel="icon" href="images/quadruped/robot_irl.jpg" type="image/jpeg">
+    <script src="js/theme.js?v=3"></script>
+    <script src="js/loading.js?v=1"></script>
+    <link rel="stylesheet" href="css/style.css?v=balanced-galleries-29">
 </head>
-
 <body>
-    <!-- Loader -->
-    <div class="loader_bg">
-        <div class="loader"><img src="images/loading.gif" alt="Loading"></div>
+    <div class="load-screen" role="status" aria-live="polite" aria-label="Loading portfolio images">
+        <div class="load-content">
+            <span class="load-name">Ethan Woo</span>
+            <div class="load-track" aria-hidden="true"><div class="load-fill"></div></div>
+            <p class="load-status">Loading images… <span class="load-percent">0%</span></p>
+            <button class="skip-loading" type="button" hidden>Enter site</button>
+        </div>
     </div>
+    <button class="appearance-toggle" type="button" aria-label="Toggle light and dark mode" title="Toggle light and dark mode">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 18h6M10 21h4M8.5 14.5a6 6 0 1 1 7 0c-1 .7-1.5 1.6-1.5 3.5h-4c0-1.9-.5-2.8-1.5-3.5Z"/>
+        </svg>
+    </button>
+    <main class="landing">
+        <section class="bio" aria-labelledby="name">
+            <h1 id="name">Ethan Woo</h1>
+            <p>I am a 4th year mechatronics engineering undergraduate student at the University of Waterloo. I am interested in robot learning, specifically VLAs and WAMs.</p>
+            <div class="contact-links">
+                <a href="documents/ethanwooresume.pdf">Resume</a>
+                <a href="mailto:ecpwoo@uwaterloo.ca">Email</a>
+                <a href="https://github.com/ethancpwoo">GitHub</a>
+                <a href="https://linkedin.com/in/ethancpwoo">LinkedIn</a>
+            </div>
+        </section>
+        <div class="work-columns">
+            <section aria-labelledby="experience-title">
+                <h2 id="experience-title">Experience</h2>
+                <div class="work-list"><button class="work-item" type="button" data-entry="7" aria-haspopup="dialog"><img class="company-logo" src="images/syncere/syncere-mark.png" alt=""><span class="card-title" title="Syncere">Syncere</span><span class="card-date">Jan 2026 – Sep 2026</span><span class="open-icon" aria-hidden="true">↗</span></button>
+<button class="work-item" type="button" data-entry="0" aria-haspopup="dialog"><img class="company-logo" src="images/arenax/arenax-mark.png?v=3" alt=""><span class="card-title" title="ArenaX Labs">ArenaX Labs</span><span class="card-date">Jan 2025 – Sep 2025</span><span class="open-icon" aria-hidden="true">↗</span></button>
 
-    <!-- Header with Sticky Class for sticky header functionality -->
-    <header id="home" class="sticky-wrapper-header centered-container">
-        <nav class="main-menu">
-            <ul>
-                <li><a href="#intro">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#experience">Experiences</a></li>
-                <li><a href="#project">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section with Owl Carousel -->
-    <section id="intro" class="intro_section centered-container">
-        <div class="item">
-            <h1 class="hero-title">Ethan Woo</h1>
-            <p class="hero-text">I'm currently a mechatronics engineering undergrad @ The University of Waterloo.</p>
-            <p class="hero-text"></p>
+<button class="work-item" type="button" data-entry="2" aria-haspopup="dialog"><img class="company-logo" src="images/aes/aes-mark.png?v=2" alt=""><span class="card-title" title="Advanced Electrophoresis Solutions">AES</span><span class="card-date">May 2024 – Aug 2024</span><span class="open-icon" aria-hidden="true">↗</span></button>
+<button class="work-item" type="button" data-entry="3" aria-haspopup="dialog"><img class="company-logo" src="images/epson/epson-mark.png" alt=""><span class="card-title" title="Epson Canada">Epson Canada</span><span class="card-date">Jan 2023 – Dec 2023</span><span class="open-icon" aria-hidden="true">↗</span></button></div>
+            </section>
+            <section aria-labelledby="projects-title">
+                <h2 id="projects-title">Projects</h2>
+                <div class="work-list"><button class="work-item" type="button" data-entry="9" aria-haspopup="dialog"><img src="images/mujoco-gripper/gripper-icon.svg?v=5" alt=""><span class="card-title" title="MuJoCo Gripper Manipulator">MuJoCo Gripper</span><span class="card-date">Jul 2025 – Aug 2025</span><span class="open-icon" aria-hidden="true">↗</span></button>
+<button class="work-item" type="button" data-entry="4" aria-haspopup="dialog"><img src="images/openvla/openvla-icon.svg?v=5" alt=""><span class="card-title" title="Zero-Shot VLA Manipulator Simulation Interface">OpenVLA Simulation</span><span class="card-date">Aug 2025 – Sep 2025</span><span class="open-icon" aria-hidden="true">↗</span></button>
+<button class="work-item" type="button" data-entry="5" aria-haspopup="dialog"><img src="images/quadruped/quadruped-icon.svg?v=5" alt=""><span class="card-title" title="Quadrupedal Simulation">Quadrupedal Simulation</span><span class="card-date">Mar 2024 – Jul 2026</span><span class="open-icon" aria-hidden="true">↗</span></button>
+<button class="work-item" type="button" data-entry="6" aria-haspopup="dialog"><img src="images/spacemapper/spacemapper-icon.svg?v=5" alt=""><span class="card-title" title="SLAM SpaceMapper Robot">SLAM SpaceMapper</span><span class="card-date">Jul 2024 – Aug 2024</span><span class="open-icon" aria-hidden="true">↗</span></button></div>
+            </section>
+            <section aria-labelledby="academics-title">
+                <h2 id="academics-title">Academics / Research</h2>
+                <div class="work-list"><button class="work-item" type="button" data-entry="1" aria-haspopup="dialog"><img class="company-logo" src="images/cl2/cl2logo.svg" alt=""><span class="card-title" title="CL2 Lab">CL2 Lab</span><span class="card-date">Sep 2024 – Present</span><span class="open-icon" aria-hidden="true">↗</span></button>
+<button class="work-item" type="button" data-entry="8" aria-haspopup="dialog"><img class="company-logo ntu-logo" src="images/ntu/ntu-crest.png" alt=""><span class="card-title" title="Nanyang Technological University">NTU</span><span class="card-date">Aug 2025 – Dec 2025</span><span class="open-icon" aria-hidden="true">↗</span></button></div>
+            </section>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about_section centered-container">
-        <h2>About Me:</h2>
-        <p>Hi! My name is Ethan and I am going into my 4a term studying my undergrad in mechatronics engineering at the University of Waterloo.  
-        </p>
-        <br>
-        <p>
-            Currently, I am in Singapore doing exchange at Nanyang Technical University.
-        </p>
-        <br>
-        <p>
-            I like to play baseball and badminton. 
-        </p>
-        <br>
-        <p>
-            I also really like autonomous stuff and robotics. Recently have been intrigued by Reinforcement Learning and Vision-Language-Action Models.
-        </p>
-
-        <br>
-        <br>
-        <p>
-            I am a simplistic person, as you can see by my portfolio.
-        </p>
-        <!-- <a class="main_bt" href="#">Read More</a> -->
-    </section>
-
-    <section id="experience" class="experience_section centered-container">
-        <h2>Experiences</h2>
-        <div id="container" class="invisible-rectangle fly-in">
-            <span id="text">
-                <h3>ArenaX Labs</h3>
-                <p>
-                    ArenaX Labs is a startup with goals of a RL competition platform. <br><br> Created and evaluated robotic environments for the competition.
-                    Developed modular RL training pipeline in PyTorch. <br><br> Researched SOTA RL models applied to internal robotic applications. 
-                    <br><br> First time working with robotics professionally, amazing experience. Here is a picture of robotic training in IsaacLab.
-                </p>
-
-            </span>
-            <img id="image" src="images/arenademopic.png" alt="Image" />
+    </main>
+    <dialog class="work-window" aria-labelledby="window-title">
+        <div class="window-bar"><button class="close-window" type="button" aria-label="Close window">×</button></div>
+        <div class="window-content">
+            <div class="gallery-column">
+                <div class="gallery-controls"><button class="motion-toggle" type="button" hidden>Pause GIFs</button></div>
+                <div class="photo-gallery" aria-label="Photo gallery"></div>
+            </div>
+            <div class="window-copy">
+                <h2 id="window-title"></h2>
+                <p class="window-dates"></p>
+                <p class="window-lead"></p>
+                <p class="window-description"></p>
+                <a class="window-code" href="#">View code ↗</a>
+            </div>
         </div>
-        <br></br>
-        <div id="container" class="invisible-rectangle fly-in">
-            <img id="image" src="images/jeep.jpg" alt="Image"/>
-            <span id="text">
-                <h3>Autonomous Vehicle Control, Learning and Logic Group</h3>
-                <p>
-                    Worked with Autoware and ROS2 to interface with this Jeep Cherokee to make it self driving. <br><br> I also worked with an 
-                    Indro drone and interfaced sensor and tested with it. <br><br> Ran some autonomy, perception and localization algorithms. 
-                    Cool to see SLAM working in real life.
-                </p>
-            </span>
+    </dialog>
+    <dialog class="image-viewer" aria-label="Enlarged photo">
+        <div class="viewer-bar">
+            <button class="viewer-motion" type="button" hidden>Pause GIF</button>
+            <button class="close-image close-window" type="button" aria-label="Close enlarged photo">×</button>
         </div>
-        <br></br>
-        <div id="container" class="invisible-rectangle fly-in">
-            <span id="text">
-                <h3>Advanced Electrophoresis Solutions</h3>
-                <p>
-                    Learned a lot about embedded systems. Worked primarly on their custom STM32 based-chip and installed a custom OS on it. <br><br>
-                    Worked on interfacing with different sensors and drivers written in C and C++. <br><br>
-                    Medical devices are complicated, most the pictures from the internship are NDA'd, so here is a picture of the devices.
-                </p>
-            </span>
-            <img id="image" src="images/aesdemopic.png" alt="Image"/>
-        </div>
-        <br></br>
-        <div id="container" class="invisible-rectangle fly-in">
-            <img id="image" src="images/epsondemo.jpg" alt="Image"/>
-            <span id="text">
-                <h3>Epson Canada</h3>
-                <p>
-                    My first internship. I was in Epson's applied research branch and worked on a golf launch monitor. <br><br>
-                    Developed algorithms to capture golf ball movements and calculate their spin and velocity. <br><br> First exposure
-                    to machine vision with OpenCV and C++. Built this prototype. 
-                </p>
-            </span>
-        </div>
-    </section>
-
-
-    <!-- Projects Section with Owl Carousel for Multiple Project Images -->
-    <section id="project" class="project_section centered-container">
-        <h2>Projects</h2>
-        <div id="container" class="invisible-rectangle fly-in">
-            <img id="image" src="images/openvla_model.jpg" alt="Image"/>
-            <span id="text">
-                <h3> <a href="https://github.com/ethancpwoo/mujocoarm_VLA" target="_blank" rel="noopener noreferrer">
-                    Zero-Shot VLA Manipulator Simulation Interface
-                </a></h3>
-                <p>
-                    Integrated MuJoCo simulation pipeline to a state of the art Vision-Language-Action model (OpenVLA). <br><br>
-                    First time working with a large model, and requires heavy computation. Used GCP VM to run.
-                </p>
-            </span>
-        </div>
-        <br></br>
-        <div id="container" class="invisible-rectangle fly-in">
-            <span id="text">
-                <h3><a href="https://github.com/ethancpwoo/quadrupedal-sim" target="_blank" rel="noopener noreferrer">
-                   Quadrupedal Simulation
-                </a></h3>
-                <p>
-                    I built this quadruped with my roommate. He worked primarily on the mechanical robot, I worked more on the autonomy. <br><br>
-                    I used RL and PyTorch to train the quadruped on how to walk. I created a simulation of the robot using PyBullet and
-                    did the sim-to-real transfer using ROS2.
-                </p>
-            </span>
-            <img id="image" src="images/robot_irl.jpg" alt="Image" />
-        </div>
-        <br></br>
-        <div id="container" class="invisible-rectangle fly-in">
-            <img id="image" src="images/slampic1.png" alt="Image"/>
-            <span id="text">
-                <h3><a href="https://github.com/ethancpwoo/SLAM-SpaceMapper" target="_blank" rel="noopener noreferrer">
-                   SLAM SpaceMapper Robot
-                </a></h3>
-                <p>
-                    I used OpenCV and C++ to program a robot running an Monocular ORB-SLAM algorithm. <br><br>
-                    
-                    Algorithm ran on a Raspberry Pi 3, using an Arducam. <br><br> 
-
-                    The robot was designed with OnShape and with a L298N motor controller driving the motors. ORB-SLAM created a map of the 
-                    area the robot covered.
-                </p>
-            </span>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="centered-container">
-        <p>Ethan Woo, ecpwoo@uwaterloo.ca</p>
-    </footer>
-
-    <!-- JavaScript and Plugin Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
-    <script src="js/custom.js"></script>
-    <script src="js/smooth_scroll.js"></script>
-    <script src="js/animations.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#contact-form').on('submit', function(e) {
-                e.preventDefault();
-                
-                var formData = $(this).serialize();
-                
-                $.ajax({
-                    type: 'POST',
-                    url: 'https://your-emailjs-service-or-server-url', // Replace with EmailJS or server endpoint
-                    data: formData,
-                    success: function(response) {
-                        $('.form-message').text('Thank you for reaching out! Your message has been sent.').css('color', 'green');
-                    },
-                    error: function() {
-                        $('.form-message').text('Oops! Something went wrong. Please try again later.').css('color', 'red');
-                    }
-                });
-            });
-        });
-        </script>
-    <script>
-        $(document).ready(function () {
-            // Activate Owl Carousel for Project Slider
-            $(".carousel-slider-post").owlCarousel({
-                items: 1,
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            });
-
-            // Initialize Tooltips
-            $('[data-toggle="tooltip"]').tooltip();
-
-            // PDF.js code to load and display the PDF in the resume section
-            var url = 'resume/EthanWooResume.pdf';
-            var canvas = document.getElementById('pdf-canvas');
-            var context = canvas.getContext('2d');
-
-            pdfjsLib.getDocument(url).promise.then(function (pdf) {
-                pdf.getPage(1).then(function (page) {
-                    var viewport = page.getViewport({ scale: 1 });
-                    canvas.height = viewport.height;
-                    canvas.width = viewport.width;
-
-                    page.render({
-                        canvasContext: context,
-                        viewport: viewport
-                    });
-                });
-            });
-        });
-    </script>
+        <figure><img class="enlarged-image" alt=""><figcaption class="image-caption"></figcaption></figure>
+    </dialog>
+    <script src="js/portfolio.js?v=17"></script>
 </body>
-
 </html>
